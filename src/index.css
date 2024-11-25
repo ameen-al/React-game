@@ -1,0 +1,53 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://t3.ftcdn.net/jpg/00/88/98/18/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* App container styling */
+  .app {
+    text-align: center; /* Center text */
+  }
+  
+  /* Game status text */
+  .status {
+    font-size: 24px; /* Larger font for status */
+    margin-bottom: 20px; /* Space below the status */
+  }
+  
+  /* Board layout */
+  .board {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 100px); /* Three columns of 100px each */
+    grid-gap: 5px; /* Space between squares */
+  }
+  
+  /* Square button styling */
+  .square {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    font-size: 36px; /* Larger font for X and O */
+    background-color: #fff; /* White background for squares */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+  }
+  
+  /* Square hover effect */
+  .square:hover {
+    background-color: #e7f1ff; /* Light blue on hover */
+  }
+  
+  /* Square active state */
+  .square:focus {
+    outline: none; /* Remove default outline */
+  }
